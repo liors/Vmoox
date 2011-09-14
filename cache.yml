@@ -1,0 +1,109 @@
+!!com.aptana.scripting.model.BundleElement
+author: My Name
+children:
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children: &id001 []
+    commandName: Sample Command
+    customProperties: null
+    displayName: Sample Command
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Sample Snippet
+    customProperties: null
+    displayName: Sample Snippet
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Sample Snippet
+      customProperties: null
+      displayName: Sample Snippet
+      path: bundle.rb
+      scope: null
+    commandName: Sub Menu
+    customProperties: null
+    displayName: Sub Menu
+    path: bundle.rb
+    scope: null
+  commandName: t
+  customProperties: null
+  displayName: t
+  path: bundle.rb
+  scope: null
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Swap Case
+  input: [selection, word]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: replace_selection
+  path: commands/commands.rb
+  runType: current_thread
+  scope: source
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [sample]
+  displayName: Sample Snippet
+  expansion: sample_snippet
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: Sample File Template
+  filetype: '*.txt'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.ProjectTemplateElement
+  customProperties: {replace_parameters: true}
+  description: A basic template which includes only a default index.html file
+  displayName: Sample Project Template
+  location: templates/sample_project_template.zip
+  path: templates/templates.rb
+  scope: null
+  type: WEB
+copyright: '(c) Copyright 2011 sample.org. Distributed under MIT license.
+
+  '
+customProperties: null
+decreaseIndentMarkers: &id002 {}
+description: 'Sample description
+
+  '
+displayName: t
+fileTypeRegistry: *id002
+fileTypes: *id001
+foldingStartMarkers: *id002
+foldingStopMarkers: *id002
+increaseIndentMarkers: *id002
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: null
+visible: true
