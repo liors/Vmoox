@@ -1,3 +1,4 @@
-require "sinatra"
-require "main"
+require 'sinatra'
+require './main'
+
 run Sinatra::Application
