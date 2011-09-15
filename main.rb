@@ -1,10 +1,10 @@
 require 'rubygems'
 require 'sinatra'
-require 'json'
-
+require 'haml'
+require 'sass'
 
 get '/' do 
-  "Hello My App"
+  haml :index
 end
 
 get '/:name' do 
