@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
 gem 'sinatra'
 gem 'haml'
-gem 'bson_ext', '1.3.1'
+gem 'bson_ext'
 gem 'mongoid'
