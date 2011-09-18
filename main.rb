@@ -2,7 +2,6 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 require 'mongoid'
-require 'model/email'
 require 'json'
 
 configure do
@@ -25,4 +24,9 @@ get '/api/email' do content_type :json
   email = Email.all_in()
   email.to_json
   
+end
+
+class Email
+  include Mongoid::Document
+  field :email
 end
