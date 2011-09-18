@@ -1,12 +1,2 @@
-defaults: &defaults
-  
- 
-development:
-  <<: *defaults
-  database: emails_database
-
-
-# set these environment variables on your prod server
-production: 
-  <<: *defaults
-	uri: <%= ENV['MONGOHQ_URL'] %>
+production:
+  uri: <%= ENV['MONGOHQ_URL'] %>
