@@ -3,7 +3,6 @@ require 'sinatra'
 require 'haml'
 require 'mongoid'
 require 'model/email'
-
 require 'json'
 
 configure do
