@@ -4,12 +4,6 @@ require 'haml'
 require 'mongoid'
 require 'json'
 
-configure do
-   Mongoid.configure do |config|
-    name = "emails_database"
-    config.master = Mongo::Connection.new.db(name)
-   end
-end
 
 get '/' do 
   haml :index
