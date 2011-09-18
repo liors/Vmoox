@@ -1,5 +1,5 @@
 defaults: &defaults
-  host: localhost
+  
  
 development:
   <<: *defaults
