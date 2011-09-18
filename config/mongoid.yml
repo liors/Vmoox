@@ -8,4 +8,5 @@ development:
 
 # set these environment variables on your prod server
 production: 
-	uri: <%= ENV['MONGOID_URL'] %>
+  <<: *defaults
+	uri: <%= ENV['MONGOHQ_URL'] %>
