@@ -1,0 +1,59 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style type="com.efectiveit.prototype.client.view.LeftNavigationView.LeftNavigationViewStyle">
+		.hide {
+			display: none;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<div class="span3">
+			<div class="well sidebar-nav">
+				<g:HTMLPanel ui:field="operationsSections">
+					<ul class="nav nav-list">
+						<li ui:field="inventoryContainer" class="nav-header active">
+							<g:Anchor ui:field="inventory" href="#">Inventory</g:Anchor>
+						</li>
+						<li ui:field="workflowContainer" class="nav-header">
+							<g:Anchor ui:field="workflow" href="#">Workflows</g:Anchor>
+						</li>
+						<li ui:field="workflowRunning" class="hide">
+							<a href="#">Running Workflows</a>
+						</li>
+						<li ui:field="workflowRepository" class="hide">
+							<a href="#">Repository</a>
+						</li>
+						<li ui:field="workflowHistory" class="hide">
+							<a href="#">History</a>
+						</li>
+						<li ui:field="reportsContainer" class="nav-header">
+							<g:Anchor ui:field="reports" href="#">Reports</g:Anchor>
+						</li>
+					</ul>
+				</g:HTMLPanel>
+				<g:HTMLPanel ui:field="datacenterSections" styleName="{style.hide}">
+					<ul class="nav nav-list">
+						<li ui:field="navigationContainer" class="nav-header">
+							<g:Anchor ui:field="navigation" href="#">Navigation</g:Anchor>
+						</li>
+						<li ui:field="siteContainer" class="nav-header">
+							<g:Anchor ui:field="site" href="#">Site</g:Anchor>
+						</li>
+						<li ui:field="datacentersContainer" class="nav-header">
+							<g:Anchor ui:field="datacenters" href="#">Datacenters</g:Anchor>
+						</li>
+						<li ui:field="ServersContainer" class="nav-header">
+							<g:Anchor ui:field="servers" href="#">Servers</g:Anchor>
+						</li>
+						<li ui:field="databasesContainer" class="nav-header active">
+							<g:Anchor ui:field="databases" href="#">Databases</g:Anchor>
+						</li>
+						<li ui:field="networksContainer" class="nav-header">
+							<g:Anchor ui:field="networks" href="#">Datacenters</g:Anchor>
+						</li>
+					</ul>
+				</g:HTMLPanel>
+			</div><!--/.well -->
+		</div><!--/span -->
+	</g:HTMLPanel>
+</ui:UiBinder> 

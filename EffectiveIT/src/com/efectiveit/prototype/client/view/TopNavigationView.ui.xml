@@ -1,0 +1,39 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+		<div class="row-fluid">
+			<div class="span12">
+				<ul class="nav nav-pills">
+					<li ui:field="datacenterContainer">
+						<g:Anchor ui:field="datacenter" href="#">Datacenter Explorer</g:Anchor>
+					</li>
+					<li>
+						<a href="#">Configuration Management</a>
+					</li>
+					<li>
+						<a href="#">Release Management</a>
+					</li>
+					<li>
+						<a href="#">Monitoring</a>
+					</li>
+					<li>
+						<a href="#">Audit</a>
+					</li>
+					<li>
+						<a href="#">User Management</a>
+					</li>
+					<li ui:field="operationsContainer">
+						<g:Anchor ui:field="operations" href="#">Operations</g:Anchor>
+					</li>
+					<li>
+						<a href="#">Administration</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,26 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style type="com.efectiveit.prototype.client.view.TopActionsView.TopActionsViewStyle">
+		.hide {
+			display: none;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<div class="row-fluid">
+			<div class="span12">
+				<div ui:field="datacenterContainer" class="btn-group">
+					
+				</div>
+				
+				<div ui:field="operationsContainer" class="btn-group">
+					<button class="btn btn-primary">Delete</button>
+					<button class="btn">Modify</button>
+					<button class="btn">Merge</button>
+					<button class="btn">Diff</button>
+					<button class="btn">Report</button>
+				</div>
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 
