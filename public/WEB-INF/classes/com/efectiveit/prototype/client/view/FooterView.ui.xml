@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<div id="footer">
+	        <div class="footer-container">
+	            <div class="copyright">
+	                 &copy; 2012 EffectiveIT Admin Panel. All rights reserved
+	            </div>
+	        </div>
+	        <div id="goTop">
+	            <a href="#" class="tip-top" title="Go Top">Top</a>
+	        </div>
+        </div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

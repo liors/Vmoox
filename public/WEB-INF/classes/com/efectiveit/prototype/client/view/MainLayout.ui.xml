@@ -1,0 +1,22 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:efectiveit="urn:import:com.efectiveit.prototype.client.view"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p="urn:import:com.efectiveit.prototype.client">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+			<efectiveit:TopNavigationView ui:field="topNavigationView"></efectiveit:TopNavigationView>
+			
+			<efectiveit:TopActionsView ui:field="topActionsView"></efectiveit:TopActionsView>
+			
+			<div class="row-fluid">
+				<efectiveit:LeftNavigationView ui:field="leftNavigationView"></efectiveit:LeftNavigationView>				
+				
+				<div class="span9">
+					<efectiveit:BreadcrumbView ui:field="breadcrumbView"></efectiveit:BreadcrumbView>	
+					<efectiveit:GridView ui:field="gridView"></efectiveit:GridView>							
+				</div>
+			</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

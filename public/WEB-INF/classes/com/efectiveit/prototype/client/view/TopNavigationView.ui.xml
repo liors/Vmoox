@@ -1,0 +1,19 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+		<ul>
+			<li ui:field="datacenterContainer"><g:Anchor ui:field="datacenter" href="#"><span class="sc-icon dashboard"></span> Datacenter Explorer </g:Anchor></li>
+			<li><a href="#"><span class="sc-icon settings"></span> Configuration Management </a></li>
+			<li><a href="#"><span class="sc-icon satistics"></span> Release Management</a></li>
+			<li><a href="#"><span class="sc-icon userlist"></span> Monitoring </a></li>
+			<li><a href="#"><span class="sc-icon tasklist"></span> Audit </a></li>
+			<li><a href="#"><span class="sc-icon content-c"></span> User Management </a></li>
+			<li ui:field="operationsContainer"><g:Anchor ui:field="operations" href="#">Operations<span class="sc-icon reports-c"></span></g:Anchor></li>
+			<li><a href="#"><span class="sc-icon medialibrary"></span> Administration </a></li>
+		</ul>		
+	</g:HTMLPanel>
+</ui:UiBinder> 

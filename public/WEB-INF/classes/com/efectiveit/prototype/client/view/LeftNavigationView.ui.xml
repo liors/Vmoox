@@ -1,0 +1,35 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style type="com.efectiveit.prototype.client.view.LeftNavigationView.LeftNavigationViewStyle">
+		.hide {
+			display: none !important;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<ul id="sidenav" class="menu collapsible">
+			<g:HTMLPanel ui:field="operationsSections">
+				<li><g:Anchor ui:field="inventory" href="#" styleName="active"><span class="nav-icon dboard-icon"></span> Inventory<span ui:field="inventoryActiveIndicator" class="active-nidicator">&nbsp;</span></g:Anchor></li>
+				<li><g:Anchor ui:field="workflow" href="#"><span class="nav-icon frm-element"></span> Workflows<span class="n-count">3</span><span ui:field="workflowActiveIndicator">&nbsp;</span></g:Anchor>
+				<ul class="acitem">
+					<li><g:Anchor ui:field="workflowRunning" href="#"><span class="list-icon">&nbsp;</span> Running Workflows</g:Anchor></li>
+					<li><g:Anchor ui:field="workflowRepository" href="#"><span class="list-icon">&nbsp;</span>Repository</g:Anchor></li>
+					<li><g:Anchor ui:field="workflowHistory" href="#"><span class="list-icon">&nbsp;</span>History</g:Anchor></li>
+				</ul>
+				</li>
+				<li><g:Anchor ui:field="reports" href="#"><span class="nav-icon dboard-icon"></span > Reports<span ui:field="reporsActiveIndicator">&nbsp;</span></g:Anchor></li>
+			</g:HTMLPanel>
+			
+			
+			<g:HTMLPanel ui:field="datacenterSections"  styleName="{style.hide}">
+				<li><g:Anchor ui:field="navigation" href="#"><span class="nav-icon dboard-icon"></span> Navigation<span>&nbsp;</span></g:Anchor></li>
+				<li><g:Anchor ui:field="site" href="#"><span class="nav-icon dboard-icon"></span> Site<span>&nbsp;</span></g:Anchor></li>
+				<li><g:Anchor ui:field="datacenters" href="#"><span class="nav-icon dboard-icon"></span> Datacenters<span>&nbsp;</span></g:Anchor></li>
+				<li><g:Anchor ui:field="servers" href="#"><span class="nav-icon dboard-icon"></span> Servers<span>&nbsp;</span></g:Anchor></li>
+				<li><g:Anchor ui:field="databases" href="#" styleName="active"><span class="nav-icon dboard-icon"></span> Databases<span class="active-nidicator">&nbsp;</span></g:Anchor></li>
+				<li><g:Anchor ui:field="networks" href="#"><span class="nav-icon dboard-icon"></span> Datacenters<span>&nbsp;</span></g:Anchor></li>			
+			</g:HTMLPanel>
+		</ul>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 
